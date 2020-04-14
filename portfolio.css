@@ -1,21 +1,81 @@
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat&display=swap');
+
+
+canvas {
+  position: absolute;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: 'Inconsolata', monospace;
+text-transform: lowercase;
+
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#blob {
+  top:-3%;
+  left:-3%;
+  right:3%;
+  margin: 0 auto;
+}
+#blob2 {
+  top:23%;
+  left:14%;
+}
+
+.logo {
+  width:40%;
+}
+
 .jumbotron {
-  padding: 8rem 0rem;
+  position: relative;
+  padding: 20rem 0rem;
+  background: #ddd6f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 .jumbotron .container {
-  max-width: 50rem;
+  max-width: 80rem;
 }
-
+.mich-frame {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  float: right;
+}
 .mich-small {
-  border-radius: 5px 20px 5px;
-  filter:grayscale(100%);
-  max-width:80%;
+  display: inline;
   margin: 0 auto;
-  height:auto;
+  height: 100%;
+  filter:grayscale(100%);
+  margin-left: -10%;
 }
 
+.projects-title {
+  padding-bottom: 3%;
+}
+
+.card-img-top {
+  filter:grayscale(1);
+}
+
+.card-img-top:hover {
+  filter:grayscale(0);
+}
 
 @media (max-width: 575px) {
+  .mich-frame {
+    float: none;
+  }
   .hybrid {
     padding:25px;
   }
@@ -28,6 +88,7 @@
 }
 
 @media (min-width: 768px) {
+
   .card-columns {
     column-count: 2;
   }
@@ -37,8 +98,13 @@
   .card-columns {
     column-count: 3;
   }
+}
 
   .card-img-top {
     height:200px;
     object-fit: contain;
   }
+
+.resume-pdf {
+  height: 100vh;
+}
