@@ -1,7 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Inconsolata|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
-
+body {
+  background: #f8f9fa;
+}
 canvas {
   position: absolute;
   overflow: hidden;
@@ -9,6 +12,7 @@ canvas {
 
 h1, h2, h3, h4, h5 {
 font-family: 'Inconsolata', monospace;
+font-family: 'Nanum Myeongjo', serif;
 text-transform: lowercase;
 
 }
@@ -28,7 +32,19 @@ p {
   left:14%;
 }
 
-.logo {
+header {
+background: #ddd6f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #77a7ff, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #77a7ff, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar {
+  background-color: none;
+}
+
+span.logo {
+  font-family: 'Nanum Myeongjo', serif;
+  color: #0053ad;
   width:40%;
 }
 
@@ -36,9 +52,9 @@ p {
   position: relative;
   padding: 20rem 0rem;
   background: #ddd6f3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: -webkit-linear-gradient(to right, #77a7ff, #f3d6dd);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #77a7ff, #f3d6dd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-bottom:0;
 }
 
 .jumbotron .container {
@@ -56,20 +72,54 @@ background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, F
   display: inline;
   margin: 0 auto;
   height: 100%;
-  filter:grayscale(100%);
+  filter:sepia(100%) hue-rotate(180deg) saturate(150%);
   margin-left: -10%;
 }
 
-.projects-title {
-  padding-bottom: 3%;
-}
+.card {
+  margin-right: 15px;
+  margin-bottom: 15px !important;
+  }
 
 .card-img-top {
-  filter:grayscale(1);
+  filter:sepia(80%) hue-rotate(-50deg) saturate(50%);
+}
+
+.nav-link h4 {
+  color: #545b62;
+}
+
+.hybrid h2, .hybrid h4, .hybrid p {
+  color: #f8f9fa;
+}
+
+.nav-tabs {
+  background-color: #ddd6f34a;
+  margin-bottom: 2%;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #f8f9fa;
+}
+
+main {
+  background-color: #f8f9fa;
 }
 
 .card-img-top:hover {
   filter:grayscale(0);
+}
+
+h5.card-title, h5.card-title a {
+  color: #545b62;
+}
+
+.navbar-light .navbar-nav .nav-link, {
+  color: #0053ad;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: #003875;
 }
 
 @media (max-width: 575px) {

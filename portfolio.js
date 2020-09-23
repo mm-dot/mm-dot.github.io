@@ -84,7 +84,7 @@ class Blob {
     this._color = value;
   }
   get color() {
-    return this._color || '#faaca8';
+    return this._color || '#007bff80';
   }
 
   set canvas(value) {
@@ -236,12 +236,12 @@ init = function () {
       let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
       angle = Math.atan2(vector.x, vector.y);
       hover = true;
-      blob.color = '#f7797d';
+
     } else if (dist > blob.radius && hover === true) {
       let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
       angle = Math.atan2(vector.x, vector.y);
       hover = false;
-      blob.color = '#f7797d';
+
     }
 
     if (typeof angle == 'number') {
@@ -312,12 +312,12 @@ init = function () {
       let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
       angle = Math.atan2(vector.y, vector.x);
       hover = true;
-      blob2.color = '#ad9edb';
+
     } else if (dist > blob2.radius && hover === true) {
       let vector = { x: e.clientX - pos.x, y: e.clientY - pos.y };
       angle = Math.atan2(vector.y, vector.x);
       hover = false;
-      blob2.color = '#ad9edb';
+
     }
 
     if (typeof angle == 'number') {

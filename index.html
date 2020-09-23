@@ -11,16 +11,19 @@
   <body>
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.php"><img class="logo" src="img/logo-hrz.png" alt="michelle martin"></a>
+  <nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="index.php"><span class="logo">Michelle.</span></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="/index.html">Projects <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/index.html">My Work<span class="sr-only">(current)</span></a>
       </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="./content.html">Content Work</a>
+      </li> -->
       <li class="nav-item">
         <a class="nav-link" href="./resume.html">Resumé</a>
       </li>
@@ -28,97 +31,159 @@
     </ul>
   </div>
 </nav>
-</header>
 
-<main>
-      <section class="jumbotron">
-          <div class="container">
-              <canvas height="900px" width="900px" id="blob"></canvas>
-                <canvas height="700px" width="700px" id="blob2"></canvas>
-            <div class="row">
-              <div class="col-sm-4">
-                    <div class="mich-frame"><img src="img/MartinMichelle.jpg" class=" mich-small" alt="..."></div>
-              </div>
-              <div class="col-sm-8">
-                <div class="hybrid">
-                  <h1 class="display-1">Michelle Martin</h1>
-                  <h3 class="">Dev-Marketing Hybrid</h3>
-                  <!-- <p class="lead text-muted">Shopify Liquid, Wordpress PHP, CSS, JS, Landing Pages & Forms, HTML Emails, Analytics & Marketing Intel, PPC Campaigns, SEO, Agile Methodologies</p> -->
-                  <p class="lead text-muted">e-Commerce Developer, Brand-Builder, all-around great gal</p>
-                  <a href="https://www.linkedin.com/in/michelleannmartin/" class="btn btn-secondary my-2">LinkedIn</a>
-                  <a href="https://github.com/martin6724/" class="btn btn-primary my-2">GitHub</a>
-                </div>
-              </div>
-          </div>
+<section class="jumbotron">
+    <div class="container">
+        <canvas height="900px" width="900px" id="blob"></canvas>
+          <canvas height="700px" width="700px" id="blob2"></canvas>
+      <div class="row">
+        <div class="col-sm-4">
+              <div class="mich-frame"><img src="img/MartinMichelle.jpg" class=" mich-small" alt="..."></div>
+        </div>
+        <div class="col-sm-8">
+          <div class="hybrid">
+            <h2 class="display-1">Michelle M.</h2>
+            <h4 class="">Dev-Marketing Hybrid</h4>
+            <!-- <p class="lead text-muted">Shopify Liquid, Wordpress PHP, CSS, JS, Landing Pages & Forms, HTML Emails, Analytics & Marketing Intel, PPC Campaigns, SEO, Agile Methodologies</p> -->
+            <p class="lead">e-Commerce Developer, Brand-Builder, all-around great gal</p>
+            <a href="https://www.linkedin.com/in/michelleannmartin/" class="btn btn-secondary my-2">LinkedIn</a>
+            <a href="https://github.com/martin6724/" class="btn btn-primary my-2">GitHub</a>
           </div>
         </div>
+    </div>
+    </div>
+  </div>
 
-      </section>
+</section>
 
-      <section class="work">
-        <div class="container justify-content-center align-items-center">
-            <div class="d-flex justify-content-center projects-header">
-                <h2 class="projects-title">Projects</h2>
-            </div>
+</header>
+  <section class="sub-nav">
+          <ul class="nav nav-tabs nav-fill" role="tablist">
+            <li class="nav-item">
+                  <a class="nav-link active" id="web-tab" data-toggle="tab"  href="#web" aria-controls="web" aria-selected="true"><h4 class="projects-title">Web Projects</h4></a>
+            </li>
+            <li class="nav-item">
+                  <a class="nav-link" id="copy-tab" data-toggle="tab"  aria-controls="copy" href="#copy"><h4 class="projects-title">Copy</h4></a>
+            </li>
+            <li class="nav-item">
+                  <a class="nav-link" id="ppc-tab" data-toggle="tab" aria-controls="ppc" href="#ppc"><h4 class="projects-title">PPC</h4></a>
+            </li>
+          </ul>
+  </section>
 
-          <div class="card-deck">
+        <main>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="web" role="tabpanel" aria-labelledby="web-tab">
+              <div class="container justify-content-center align-items-center">
+              <div class="card-deck">
 
-            <div class="card" style="min-width: 20rem;">
-              <img class="card-img-top" src="./img/ct.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title"><a href="https://www.colortrak.com/">Colortrak.com e-Com</a></h5>
-                <p class="card-text">Populated over 200 SKUs, shopify liquid customizations, API integrations, product copy, PPC/SEO strategy. Tripled online sales in 8 months.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-dark">JQuery | JS | Rails </small>
-              </div>
-            </div>
-
-            <div class="card" style="min-width: 20rem;">
-              <img class="card-img-top" src="./img/bd.jpg" alt="">
-              <div class="card-body">
-                <h5 class="card-title"><a href="https://bettydain.com/">BettyDain.com e-Com</a></h5>
-                <p class="card-text">Designed and implemented first e-commerce experience for established brand, developed custom shopify features for easy updating.</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-dark">JQuery | JS | Rails </small>
-              </div>
-            </div>
-
-            <div class="card" style="min-width: 20rem;">
-              <img class="card-img-top" src="./img/landing.png" alt="  ">
-              <div class="card-body">
-                <h5 class="card-title">Responsive Landing Pages</h5>
-                <p class="card-text">PSD-to-Responsive landing pages: <a href="http://inktel.com/tim">inktel.com/tim</a>, <a href="http://www.inktel.com/be-world-class/">inktel.com/be-world-class</a>, <a href="https://www.idcomlog.com/tim/">idcomlog.com/tim/</a></p>
-              </div>
-              <div class="card-footer">
-                <small class="text-dark"> JS | Bootstrap</small>
-              </div>
-            </div>
-
-
-              <div class="card" style="min-width: 20rem;">
-                <img class="card-img-top" src="./img/lp.png" alt="  ">
-                <div class="card-body">
-                  <h5 class="card-title">eCommerce Wordpress - Shopify Integration</h5>
-                  <p class="card-text"><a href="http://www.livepawsitively.com/">Livepawsitively.com</a> site populated by Shopify inventory, featuring secure forms and more.</p>
+                <div class="card" style="min-width: 20rem;">
+                  <img class="card-img-top" src="./img/ct.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="https://www.colortrak.com/">Colortrak.com e-Com</a></h5>
+                    <p class="card-text">Populated over 200 SKUs, shopify liquid customizations, API integrations, product copy, PPC/SEO strategy. Tripled online sales in 8 months.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-dark">JQuery | JS | Rails </small>
+                  </div>
                 </div>
-                <div class="card-footer">
-                  <small class="text-dark">Shopify API | WooCommerce | Wordpress </small>
+
+                <div class="card" style="min-width: 20rem;">
+                  <img class="card-img-top" src="./img/bd.jpg" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="https://bettydain.com/">BettyDain.com e-Com</a></h5>
+                    <p class="card-text">Designed and implemented first e-commerce experience for established brand, developed custom shopify features for easy updating.</p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-dark">JQuery | JS | Rails </small>
+                  </div>
+                </div>
+
+                <div class="card" style="min-width: 20rem;">
+                  <img class="card-img-top" src="./img/landing.png" alt="  ">
+                  <div class="card-body">
+                    <h5 class="card-title">Responsive Landing Pages</h5>
+                    <p class="card-text">PSD-to-Responsive landing pages: <a href="http://inktel.com/tim">inktel.com/tim</a>, <a href="http://www.inktel.com/be-world-class/">inktel.com/be-world-class</a>, <a href="https://www.idcomlog.com/tim/">idcomlog.com/tim/</a></p>
+                  </div>
+                  <div class="card-footer">
+                    <small class="text-dark"> JS | Bootstrap</small>
+                  </div>
+                </div>
+
+
+                  <div class="card" style="min-width: 20rem;">
+                    <img class="card-img-top" src="./img/lp.png" alt="  ">
+                    <div class="card-body">
+                      <h5 class="card-title">eCommerce Wordpress - Shopify Integration</h5>
+                      <p class="card-text"><a href="http://www.livepawsitively.com/">Livepawsitively.com</a> site populated by Shopify inventory, featuring secure forms and more.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-dark">Shopify API | WooCommerce | Wordpress </small>
+                    </div>
+                  </div>
+
+                  <div class="card" style="min-width: 20rem;">
+                    <img class="card-img-top" src="./img/movieapp3.png" alt="  ">
+                    <div class="card-body">
+                      <h5 class="card-title">React Mobile App</h5>
+                      <p class="card-text">An unpublished mobile web app for viewing films playing in theaters. Built with React Native for mobile support. </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-dark">React | React Native | JS </small>
+                    </div>
+                  </div>
+
+
+                  <div class="card" style="min-width: 20rem;">
+                    <img class="card-img-top" src="./img/jbd.png" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Custom Wordpress Theme w/ WooCommerce </h5>
+                      <p class="card-text"><a href="https://juniorbasketballdevelopment.com/">Junior Basketball Development</a> Fully customized WooCommerce theme from photoshop design. Used SASS & GULP in production.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-dark"> PHP | Bootstrap </small>
+                    </div>
+                  </div>
+
+                  <div class="card" style="min-width: 20rem;">
+                    <img class="card-img-top" src="./img/mycro.jpg" alt="  ">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="http://mycrobio-me.herokuapp.com/">Mycrobio-me</a></h5>
+                      <p class="card-text">An interactive 3D model of human organ systems and their flora, as well as corresponding antibiotics. </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-dark">JQuery | JS | Rails </small>
+                    </div>
+                  </div>
+
+                    <div class="card" style="min-width: 20rem;">
+                      <img class="card-img-top" src="./img/kluger-email.png" alt="  ">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Emails</h5>
+                        <p class="card-text">Custom Wordpress theme in production, made entirely from scratch with GULP. Includes JS features, and WooCommerce support.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-dark">Email Design | HTML</small>
+                      </div>
+                    </div>
+
+                    <div class="card" style="min-width: 20rem;">
+                      <img class="card-img-top" src="./img/kluger-email.png" alt="  ">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Emails</h5>
+                        <p class="card-text">Custom Wordpress theme in production, made entirely from scratch with GULP. Includes JS features, and WooCommerce support.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-dark">Email Design | HTML</small>
+                      </div>
+                    </div>
+
                 </div>
               </div>
-
-              <div class="card" style="min-width: 20rem;">
-                <img class="card-img-top" src="./img/movieapp3.png" alt="  ">
-                <div class="card-body">
-                  <h5 class="card-title">React Mobile App</h5>
-                  <p class="card-text">An unpublished mobile web app for viewing films playing in theaters. Built with React Native for mobile support. </p>
-                </div>
-                <div class="card-footer">
-                  <small class="text-dark">React | React Native | JS </small>
-                </div>
-              </div>
-
+            </div>
+            <div class="tab-pane fade" id="copy" role="tabpanel" aria-labelledby="copy-tab">
+              <div class="container justify-content-center align-items-center">
+              <div class="card-deck">
 
               <div class="card" style="min-width: 20rem;">
                 <img class="card-img-top" src="./img/jbd.png" alt="">
@@ -152,12 +217,52 @@
                     <small class="text-dark">Email Design | HTML</small>
                   </div>
                 </div>
+              </div>
+            </div>
+            </div>
 
+            <div class="tab-pane fade" id="ppc" role="tabpanel" aria-labelledby="ppc-tab">
+              <div class="container justify-content-center align-items-center">
+              <div class="card-deck">
+
+                  <div class="card" style="min-width: 20rem;">
+                    <img class="card-img-top" src="./img/jbd.png" alt="">
+                    <div class="card-body">
+                      <h5 class="card-title">Custom Wordpress Theme w/ WooCommerce </h5>
+                      <p class="card-text"><a href="https://juniorbasketballdevelopment.com/">Junior Basketball Development</a> Fully customized WooCommerce theme from photoshop design. Used SASS & GULP in production.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-dark"> PHP | Bootstrap </small>
+                    </div>
+                  </div>
+
+                  <div class="card" style="min-width: 20rem;">
+                    <img class="card-img-top" src="./img/mycro.jpg" alt="  ">
+                    <div class="card-body">
+                      <h5 class="card-title"><a href="http://mycrobio-me.herokuapp.com/">Mycrobio-me</a></h5>
+                      <p class="card-text">An interactive 3D model of human organ systems and their flora, as well as corresponding antibiotics. </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-dark">JQuery | JS | Rails </small>
+                    </div>
+                  </div>
+
+                    <div class="card" style="min-width: 20rem;">
+                      <img class="card-img-top" src="./img/kluger-email.png" alt="  ">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Emails</h5>
+                        <p class="card-text">Custom Wordpress theme in production, made entirely from scratch with GULP. Includes JS features, and WooCommerce support.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-dark">Email Design | HTML</small>
+                      </div>
+                    </div>
+              </div>
+            </div>
             </div>
           </div>
-      </section>
 
-    </main>
+        </main>
 
 
 
