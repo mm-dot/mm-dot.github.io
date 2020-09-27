@@ -10,6 +10,11 @@ canvas {
   overflow: hidden;
 }
 
+main {
+  opacity: 0;
+  margin-top:-5%;
+}
+
 h1, h2, h3, h4, h5 {
 font-family: 'Inconsolata', monospace;
 font-family: 'Nanum Myeongjo', serif;
@@ -60,6 +65,24 @@ margin-bottom:0;
 .jumbotron .container {
   max-width: 80rem;
 }
+
+.display-1 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.desc {
+  opacity:0;
+}
+
+.lead {
+  opacity:0;
+}
+
+.my-2 {
+  opacity: 0;
+}
+
 .mich-frame {
   width: 250px;
   height: 250px;
@@ -73,7 +96,8 @@ margin-bottom:0;
   margin: 0 auto;
   height: 100%;
   filter:sepia(100%) hue-rotate(180deg) saturate(150%);
-  margin-left: -10%;
+  opacity: 0;
+  margin-left:-10px;
 }
 
 .card {
@@ -82,7 +106,7 @@ margin-bottom:0;
   }
 
 .card-img-top {
-  filter:sepia(80%) hue-rotate(-50deg) saturate(50%);
+
 }
 
 .nav-link h4 {
@@ -151,8 +175,9 @@ h5.card-title, h5.card-title a {
 }
 
   .card-img-top {
-    height:200px;
-    object-fit: contain;
+    height:300px;
+    object-fit: cover;
+  object-position: top;
   }
 
 .resume-pdf {

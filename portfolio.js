@@ -354,3 +354,32 @@ init = function () {
 };
 
 init();
+
+var textWrapper = document.querySelector('.display-1');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.display-1 .letter',
+    translateY: [100,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 2000,
+    delay: (el, i) => 300 + 30 * i
+  });
+
+
+$(document).ready(function() {
+  $('.mich-small').animate({
+    'opacity': '1',
+    'margin-left': '10px',
+  }, 1200)
+	$('h4.desc').animate({'opacity':'1'}, 1800);
+  $('p.lead').animate({'opacity':'1'}, 2200);
+  $('.my-2').animate({'opacity': '1'}, 2200);
+  $('main').animate({
+    'opacity': '1',
+    'margin-top': '5%',
+  }, 2400);
+});
