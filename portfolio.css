@@ -69,6 +69,7 @@ margin-bottom:0;
 .display-1 .letter {
   display: inline-block;
   line-height: 1em;
+  color: #f8f9fa;
 }
 
 .desc {
